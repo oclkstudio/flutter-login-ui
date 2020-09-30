@@ -1,6 +1,10 @@
+// import the packages
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:login/utilities/components.dart';
+
+// Creating a stateful widget as the state of the app should not remain static
 
 class LogInPage extends StatefulWidget {
   @override
@@ -11,7 +15,7 @@ class _LogInPageState extends State<LogInPage> {
   Widget _checkBoxAndForgotPasswordRow() {
     return Container(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,      // It evenly divides the available space among the components of the row.
         children: <Widget>[
           RememberMeCheckBox(),
           ForgotPasswordButton(),
